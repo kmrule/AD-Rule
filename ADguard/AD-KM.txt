@@ -24,9 +24,11 @@
 @@||missav.com/img/flags/*.png$domain=missav.com
 !允许加载推荐内容，否则无推荐内容
 @@||client-rapi-missav.recombee.com^$domain=missav.com
-!允许使用网站功能，否则无法收藏等
+!允许使用网站功能，否则无法收藏女优
 @@||missav.com/api/actresses/*/save$domain=missav.com
 @@||missav.com/api/actresses/*/view$domain=missav.com
+!允许使用网站功能，否则无法收藏影片
+@@||missav.com/api/items/*/save$domain=missav.com
 !
 ||missav.com/js/plyr-plugin-thumbnail.js$domain=missav.com
 ||gstatic.com/recaptcha/$domain=missav.com
@@ -43,8 +45,7 @@ missav.com#%#//scriptlet('document.createElement', 'htmlAds')
 ||static.cloudflareinsights.com/beacon.min.js/
 ||gsjln04hd.com^$domain=missav.com
 ||missav.com/cdn-cgi/challenge-platform/$domain=missav.com
-||missav.com/api/items/zokfrmyh/view$domain=missav.com
-||missav.com/api/items/*/view$domain=missav.com
+
 
 
 !小书包网

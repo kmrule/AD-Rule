@@ -29,6 +29,7 @@
 @@||missav.com/api/actresses/*/view$domain=missav.com
 !允许使用网站功能，否则无法收藏影片
 @@||missav.com/api/items/*/save$domain=missav.com
+@@||missav.com/api/items/*/view$domain=missav.com
 !
 ||missav.com/js/plyr-plugin-thumbnail.js$domain=missav.com
 ||gstatic.com/recaptcha/$domain=missav.com

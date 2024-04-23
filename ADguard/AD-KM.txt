@@ -4,7 +4,6 @@
 !允许加载预览视频
 @@||fivetiu.com/*.mp4$domain=missav.com
 
-||missav.com/js/plyr-plugin-thumbnail.js$domain=missav.com
 !允许加载字体
 @@||missav.com/fonts/*.woff2$domain=missav.com
 !允许加载播放器内容，否则只能原生播放器
@@ -21,13 +20,14 @@
 @@||surrit.com/*/video.m3u8$domain=missav.com
 @@||surrit.com/*/video*.jpeg$domain=missav.com
 @@||missav.com/build/assets/app.*.css$domain=missav.com
-!允许加载语言国家图标
+!允许加载语言国家图标，否则切换语言国家图标不显示
 @@||missav.com/img/flags/*.png$domain=missav.com
 !允许加载推荐内容，否则无推荐内容
 @@||client-rapi-missav.recombee.com^$domain=missav.com
-
-
-||missav.com/api/actresses/*/view$domain=missav.com
+!允许使用网站功能，否则无法收藏等
+@@||missav.com/api/actresses/*/view$domain=missav.com
+!
+||missav.com/js/plyr-plugin-thumbnail.js$domain=missav.com
 ||gstatic.com/recaptcha/$domain=missav.com
 ||google.com/recaptcha/$domain=missav.com
 !去除详情下方推广
@@ -42,16 +42,18 @@ missav.com#%#//scriptlet('document.createElement', 'htmlAds')
 ||static.cloudflareinsights.com/beacon.min.js/
 ||gsjln04hd.com^$domain=missav.com
 ||missav.com/cdn-cgi/challenge-platform/$domain=missav.com
+||missav.com/api/items/zokfrmyh/view$domain=missav.com
+||missav.com/api/items/*/view$domain=missav.com
+
+
 !小书包网
-
-
 !谷歌广告联盟
 ||googletagmanager.com^
 
 ||qyuwkby.top^$domain=m.xiaoshubao.net
 ||baidu.com^$domain=m.xiaoshubao.net
 xiaoshubao.net##div[style="width:100vw;"]
-||missav.com/api/items/zokfrmyh/view$domain=missav.com
+
 @@||cdn.plyr.io/3.6.8/plyr.svg$domain=missav.com
 @@||m.xiaoshubao.net/Public/wapbiquge/css/*.css$domain=m.xiaoshubao.net
 ||m.xiaoshubao.net/Public/js/jquery_*.js$domain=m.xiaoshubao.net
@@ -70,4 +72,4 @@ xiaoshubao.net##div[style="width:100vw;"]
 @@||m.xiaoshubao.net/favicon.ico$domain=m.xiaoshubao.net
 ||m.xiaoshubao.net/Public/js/layer_*.js$domain=m.xiaoshubao.net
 
-||missav.com/api/items/*/view$domain=missav.com
+

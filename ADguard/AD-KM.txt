@@ -75,4 +75,16 @@ xiaoshubao.net##div[style="width:100vw;"]
 @@||m.xiaoshubao.net/favicon.ico$domain=m.xiaoshubao.net
 ||m.xiaoshubao.net/Public/js/layer_*.js$domain=m.xiaoshubao.net
 
+!通用
+##div[id*=Box]:has-text(/广告/)
+##div[id^="couplet"]:has-text(/广告/)
+!匹配 id 以 "couplet" 开头的 <div> 元素，并且这个 <div> 元素下所有内容都包含文本 "广告"。
 
+##div[id="popup-container"]:has-text(/在 0 天后结束/)
+!结束时去除强制订阅界面
+
+!itdog去广告
+##div.gg_link:has(:has-text(/广告/))
+||itdog.cn/upload/images/*.gif
+||baidu.com^$domain=itdog.cn
+||itdog.cn/assets/js/$domain=itdog.cn

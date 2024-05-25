@@ -88,3 +88,6 @@ xiaoshubao.net##div[style="width:100vw;"]
 ||itdog.cn/upload/images/*.gif
 ||baidu.com^$domain=itdog.cn
 ||itdog.cn/assets/js/$domain=itdog.cn
+
+cnys.tv##div[class="player-news"]
+cnys.tv#%#//scriptlet('set-constant', 'config.group', '')

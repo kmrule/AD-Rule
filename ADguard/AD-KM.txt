@@ -91,3 +91,6 @@ xiaoshubao.net##div[style="width:100vw;"]
 
 cnys.tv##div[class="player-news"]
 cnys.tv#%#//scriptlet('set-constant', 'config.group', '')
+
+
+*/ad-$~stylesheet,badfilter

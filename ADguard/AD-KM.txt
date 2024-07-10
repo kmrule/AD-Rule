@@ -50,7 +50,23 @@ missav.com#%#//scriptlet('document.createElement', 'htmlAds')
 ||gsjln04hd.com^$domain=missav.com
 ||missav.com/cdn-cgi/challenge-platform/$domain=missav.com
 
-
+!hanime1.me
+||hanime1.me/css/app.css$domain=hanime1.me
+@@||cdn.jsdelivr.net/npm/js-cookie@3.0.0/$domain=hanime1.me
+##网页cookie
+@@||code.jquery.com/jquery-3.3.1.min.js$domain=hanime1.me
+@@||cdn.plyr.io^$domain=hanime1.me
+@@||cdn.plyr.io^$domain=hanime1.me
+@@||hanime1.me/js/app.js$domain=hanime1.me
+##网页结构
+@@||vdownload.hembed.com/*.mp4$domain=hanime1.me
+@@||vdownload-*.com/*mp4$domain=hanime1.me
+##网页视频加载
+@@||vdownload.hembed.com/image/$domain=hanime1.me
+##网页预览图加载
+@@||cdn.jsdelivr.net/npm/hls.js@latest$domain=hanime1.me
+##网页视频加载
+##div[class*="hidden-xs"]:has-text(/點點廣告，贊助我們（●´∀｀）ノ♡/)
 
 !小书包网
 !谷歌广告联盟

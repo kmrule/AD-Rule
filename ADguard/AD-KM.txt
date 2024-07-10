@@ -51,7 +51,7 @@ missav.com#%#//scriptlet('document.createElement', 'htmlAds')
 ||missav.com/cdn-cgi/challenge-platform/$domain=missav.com
 
 !hanime1.me
-||hanime1.me/css/app.css$domain=hanime1.me
+@@||hanime1.me/css/app.css$domain=hanime1.me
 @@||cdn.jsdelivr.net/npm/js-cookie@3.0.0/$domain=hanime1.me
 ##网页cookie
 @@||code.jquery.com/jquery-3.3.1.min.js$domain=hanime1.me

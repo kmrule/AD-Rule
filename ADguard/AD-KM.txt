@@ -67,6 +67,25 @@ missav.com#%#//scriptlet('document.createElement', 'htmlAds')
 @@||cdn.jsdelivr.net/npm/hls.js@latest$domain=hanime1.me
 ##网页视频加载
 ##div[class*="hidden-xs"]:has-text(/點點廣告，贊助我們（●´∀｀）ノ♡/)
+!AD-REJECT
+||img.strpst.com
+||s3t3d2y8.afcdn.net
+||google-analytics.com
+||jads.co
+||pagead2.googlesyndication.com
+||bbrdbr.com
+||use.fontawesome.com
+||a.magsrv.com
+||impactserving.com
+||googletagmanager.com
+||strpst.com
+||mnaspm.com
+||imgur.com
+||addthis.com
+||mnaspm.com
+||cdnjs.cloudflare.com/ajax/libs/
+
+
 
 !小书包网
 !谷歌广告联盟

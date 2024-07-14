@@ -16,13 +16,15 @@
 
 !允许加载推荐内容，否则无推荐内容
 @@||missav.com/build/assets/app.1aad5686.js$domain=missav.com
+@@||missav.com/build/assets/app.*.css$domain=missav.com
+
 !允许加载m3u8地址
 @@||surrit.com/*/playlist.m3u8$domain=missav.com
 
 !允许获取视频内容，否则无法播放
 @@||surrit.com/*/video.m3u8$domain=missav.com
 @@||surrit.com/*/video*.jpeg$domain=missav.com
-@@||missav.com/build/assets/app.*.css$domain=missav.com
+
 
 !允许加载播放器图标
 @@||missav.com/img/favicon.ico$domain=missav.com

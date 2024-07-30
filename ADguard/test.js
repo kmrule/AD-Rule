@@ -1,0 +1,1 @@
+https://local.adguard.org/?ts=1722285087564&type=content-script&dmn=5cene.com&url=https%3A%2F%2F5cene.com%2F&app=firefox.exe&css=3&js=1&rel=1&rji=1&sbe=1&stealth=1&st-wrtc&st-push&st-loc&st-flash&st-ref=Z29vZ2xlLmNvbQ==&st-dnt

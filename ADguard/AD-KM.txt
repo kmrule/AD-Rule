@@ -14,7 +14,7 @@
 !播放器css
 @@||cdnjs.cloudflare.com/ajax/libs/plyr/3.6.8/plyr.css$domain=missav.com
 ||cdnjs.cloudflare.com/ajax/libs/plyr/3.6.8/plyr.min.js$domain=cdnjs.cloudflare.com
-||cdnjs.cloudflare.com/ajax/libs/hls.js/1.4.3/hls.min.js$domain=cdnjs.cloudflare.com
+@@||cdnjs.cloudflare.com/ajax/libs/hls.js/1.4.3/hls.min.js$domain=cdnjs.cloudflare.com
 ||cdnjs.cloudflare.com/ajax/libs/
 
 !允许加载推荐内容，否则无推荐内容

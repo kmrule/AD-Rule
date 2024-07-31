@@ -11,7 +11,7 @@
 @@||missav.com/fonts/*.woff2$domain=missav.com
 !允许加载播放器内容，否则只能原生播放器
 !播放器css
-@@||cdnjs.cloudflare.com/ajax/libs/*.(js|css)$domain=missav.com,cdnjs.cloudflare.com
+@@||cdnjs.cloudflare.com/ajax/libs/*.(js|css)$domain=missav.com|cdnjs.cloudflare.com
 
 ||cdnjs.cloudflare.com/ajax/libs/
 

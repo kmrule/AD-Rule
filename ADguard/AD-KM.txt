@@ -13,8 +13,6 @@
 !播放器css
 @@||cdnjs.cloudflare.com/ajax/libs/*.(js|css)$domain=missav.com|cdnjs.cloudflare.com
 
-||cdnjs.cloudflare.com/ajax/libs/
-
 !允许加载推荐内容，否则无推荐内容
 @@||missav.com/build/assets/app.1aad5686.js$domain=missav.com
 @@||missav.com/build/assets/app.*.css$domain=missav.com

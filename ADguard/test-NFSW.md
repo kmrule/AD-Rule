@@ -1,4 +1,4 @@
-tube8.net
+[我的博客](tube8.net)
 tube8.com
 tube8.fr
 tube8.es

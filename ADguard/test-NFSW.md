@@ -8,4 +8,4 @@ I get 10 times more traffic from [Google] [1] than from
 
 This is [an example](http://example.com/ "Title") inline link.
 
-[This link](http://example.net/) has no title attribute.
+[This link](wvw.russkoe21.com) has no title attribute.

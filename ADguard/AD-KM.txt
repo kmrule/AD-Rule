@@ -136,3 +136,9 @@ cnys.tv#%#//scriptlet('set-constant', 'config.group', '')
 
 
 */ad-$~stylesheet,badfilter
+
+# > uaa.com
+uaa.com##div[class*="place_holder_box"]
+uaa.com##div[class*="shortcut_box"]
+uaa.com##a:has-text(/加入电报群，天天抽VIP！/)
+uaa.com##a[href="https://t.me/uaalottery"]

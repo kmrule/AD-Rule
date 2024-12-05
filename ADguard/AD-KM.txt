@@ -1,3 +1,10 @@
+[KM]
+! Title: KM过滤
+! Description: 去广告
+! Version: 1.0
+! Expires: 7 days
+! Homepage: ?
+
 192.168.64.1###app > div > div:nth-of-type(2):has-text(/掌上办，更方便/)
 !屏蔽ikuai爱快登录后台频繁出现的绑定爱快e云弹窗
 

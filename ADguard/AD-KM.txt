@@ -46,28 +46,28 @@
 @@||missav.com/api/items/*/save$domain=missav.com
 @@||missav.com/api/items/*/view$domain=missav.com
 !
-||missav.com/js/plyr-plugin-thumbnail.js$domain=missav.com
+||missav.ws/js/plyr-plugin-thumbnail.js$domain=missav.com
 ||gstatic.com/recaptcha/$domain=missav.com
 ||google.com/recaptcha/$domain=missav.com
 
-missav.com,missav789.com#?#ul[class="mb-4 list-none text-nord14 grid grid-cols-2 gap-2"]
-missav.com,missav789.com#?#div[class="under_player"]
-missav.com,missav789.com#?#div[class="space-y-5 mb-5"]
-missav.com,missav789.com#?#div[x-ref="stripchat"]
-missav.com,missav789.com##div[class="pt-16 pb-4 lg:pb-0 px-4"]
+missav.ws,missav789.com#?#ul[class="mb-4 list-none text-nord14 grid grid-cols-2 gap-2"]
+missav.ws,missav789.com#?#div[class="under_player"]
+missav.ws,missav789.com#?#div[class="space-y-5 mb-5"]
+missav.ws,missav789.com#?#div[x-ref="stripchat"]
+missav.ws,missav789.com##div[class="pt-16 pb-4 lg:pb-0 px-4"]
 !视频右下角悬浮广告
-missav.com,missav789.com##div[class="fixed right-2 bottom-2"]
+missav.ws,missav789.com##div[class="fixed right-2 bottom-2"]
 
 !视频页面右侧侧边栏 包含广告和重复推荐
-missav.com,missav789.com##div[class="hidden lg:flex h-full ml-6 order-last"]
+missav.ws,missav789.com##div[class="hidden lg:flex h-full ml-6 order-last"]
 
 !去除详情下方推广
-missav.com#?#ul.space-y-2.mb-4.ml-4.list-disc.text-nord14 > *:remove()
-missav.com#?#ul[class="mt-4 space-y-4"] > *:remove()
-missav.com#?#ul[class="mb-4 list-none text-nord14 grid grid-cols-2 gap-2"]
+missav.ws#?#ul.space-y-2.mb-4.ml-4.list-disc.text-nord14 > *:remove()
+missav.ws#?#ul[class="mt-4 space-y-4"] > *:remove()
+missav.ws#?#ul[class="mb-4 list-none text-nord14 grid grid-cols-2 gap-2"]
 !missav.com$$script[type="text/javascript"]
 !播放跳转广告
-missav.com#%#//scriptlet('document.createElement', 'htmlAds')
+missav.ws#%#//scriptlet('document.createElement', 'htmlAds')
 !直播广告
 ||myavlive.com^$domain=missav.com
 !数据跟踪

@@ -67,7 +67,6 @@ missav.ai,missav.ws,missav789.com##div[x-show="showNewDomainNotice"]
 !去除详情下方推广
 missav.ws#?#ul.space-y-2.mb-4.ml-4.list-disc.text-nord14 > *:remove()
 missav.ws#?#ul[class="mt-4 space-y-4"] > *:remove()
-missav.ws#?#ul[class="mb-4 list-none text-nord14 grid grid-cols-2 gap-2"]
 !missav.ai$$script[type="text/javascript"]
 !播放跳转广告
 missav.ws#%#//scriptlet('document.createElement', 'htmlAds')

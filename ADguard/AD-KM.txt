@@ -50,16 +50,18 @@
 ||gstatic.com/recaptcha/$domain=missav.ai
 ||google.com/recaptcha/$domain=missav.ai
 
-missav.ws,missav789.com#?#ul[class="mb-4 list-none text-nord14 grid grid-cols-2 gap-2"]
-missav.ws,missav789.com#?#div[class="under_player"]
-missav.ws,missav789.com#?#div[class="space-y-5 mb-5"]
-missav.ws,missav789.com#?#div[x-ref="stripchat"]
-missav.ws,missav789.com##div[class="pt-16 pb-4 lg:pb-0 px-4"]
+missav.ai,missav.ws,missav789.com#?#ul[class="mb-4 list-none text-nord14 grid grid-cols-2 gap-2"]
+missav.ai,missav.ws,missav789.com#?#div[class="under_player"]
+missav.ai,missav.ws,missav789.com#?#div[class="space-y-5 mb-5"]
+missav.ai,missav.ws,missav789.com#?#div[x-ref="stripchat"]
+missav.ai,missav.ws,missav789.com##div[class="pt-16 pb-4 lg:pb-0 px-4"]
 !视频右下角悬浮广告
-missav.ws,missav789.com##div[class="fixed right-2 bottom-2"]
+missav.ai,missav.ws,missav789.com##div[class="fixed right-2 bottom-2"]
 
 !视频页面右侧侧边栏 包含广告和重复推荐
-missav.ws,missav789.com##div[class="hidden lg:flex h-full ml-6 order-last"]
+missav.ai,missav.ws,missav789.com##div[class="hidden lg:flex h-full ml-6 order-last"]
+!声明
+missav.ai,missav.ws,missav789.com##div[class="grid md:grid-cols-2 gap-8"]
 
 !去除详情下方推广
 missav.ws#?#ul.space-y-2.mb-4.ml-4.list-disc.text-nord14 > *:remove()

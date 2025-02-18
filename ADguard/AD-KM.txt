@@ -1,99 +1,105 @@
 [KM]
 ! Title: KM过滤
 ! Description: 去广告
-! Version: 1.2
-! Expires: 7 days
+! Version: 1.0.0.1
 ! Homepage: https://github.com/kmrule/AD-Rule/tree/main/ADguard
 !-----------------------General advert blocking filters-----------------------!
 
 192.168.64.1###app > div > div:nth-of-type(2):has-text(/掌上办，更方便/)
 !屏蔽ikuai爱快登录后台频繁出现的绑定爱快e云弹窗
 
-!missav.ai
-!允许加载预览图片
-@@||fivetiu.com/*.jpg$domain=missav.ai
-!允许加载预览视频
-@@||fivetiu.com/*.mp4$domain=missav.ai
+! Generated: 2025-02-18 23:09 | missav.ai  全功能适配规则集 
+! ====================[ 核心媒体通道 ]=====================
+! ■ 预览系统 
+@@||fivetiu.com/*.jpg$image,domain=missav.ai                 ! 缩略图CDN 
+@@||fivetiu.com/*.mp4$media,domain=missav.ai                ! 视频预览流 
+ 
+! ■ 主视频架构 
+@@||surrit.com/*/playlist.m3u8$domain=missav.ai             ! HLS播放列表 
+@@||surrit.com/*/video.m3u8$media,domain=missav.ai          ! 视频流主通道 
+@@||surrit.com/*/video*.jpeg$image,domain=missav.ai         ! 动态帧截图 
+ 
+! ================[ 界面完整性保障 ]================ 
+! ◉ 视觉元素系统 
+@@||missav.ai/fonts/*.woff2$font,domain=missav.ai           ! 动态字体加载 
+@@||missav.ai/img/favicon.ico$image,domain=missav.ai        ! 播放器标识 
+@@||missav.ai/img/flags/*.png$image,domain=missav.ai        ! 多语言标识 
+ 
+! ◉ 播放器生态系统 
+@@||cdnjs.cloudflare.com/ajax/libs/*.(js |css)$domain=missav.ai |cdnjs.cloudflare.com   ! 播放器依赖 
+@@||client-rapi-missav.recombee.com^$domain=missav.ai       ! 推荐算法接口 
+ 
+! ================[ 核心功能API ]===================
+! ▽ 用户行为系统 
+@@||missav.ai/api/actresses/*/(save |view)$domain=missav.ai  ! 演员收藏/浏览 
+@@||missav.ai/api/items/*/(save |view)$domain=missav.ai      ! 影片收藏/浏览 
+ 
+! ▽ 动态资源加载 
+@@||missav.ai/build/assets/app.*.(js |css)$domain=missav.ai  ! 前端编译产物 
+ 
+! ================[ 隐私防御矩阵 ]===================
+! ▼ 广告追踪系统 
+||myavlive.com^$domain=missav.ai                            ! 直播跳转拦截 
+||static.cloudflareinsights.com/beacon.min.js/              ! 行为分析SDK 
+||gsjln04hd.com^$domain=missav.ai                           ! 第三方追踪器 
+ 
+! ▼ 验证系统干扰 
+||gstatic.com/recaptcha/$domain=missav.ai                   ! reCAPTCHA屏蔽 
+||google.com/recaptcha/$domain=missav.ai  
+ 
+! ================[ DOM净化工程 ]===================
+! 移除播放器干扰 
+missav.*##div[class="fixed right-2 bottom-2"]              ! 悬浮广告 
+missav.*##div[class="hidden lg:flex h-full ml-6 order-last"] ! 侧边栏推广 
+ 
+! 清理信息污染 
+missav.*##div[x-ref="stripchat"]                           ! 直播入口 
+missav.*##div[class="pt-16 pb-4 lg:pb-0 px-4"]             ! 底部占位符 
+missav.*##div[class="grid md:grid-cols-2 gap-8"]           ! 声明区块 
+ 
+! 精确元素清除 
+missav.ws#?#ul.space-y-2.mb-4.ml-4.list-disc.text-nord14  > *:remove()  ! 详情页诱导列表 
+missav.ws#%#//scriptlet('document.createElement',  'htmlAds') ! 播放劫持防御 
 
-!允许加载字体
-@@||missav.ai/fonts/*.woff2$domain=missav.ai
-!允许加载播放器内容，否则只能原生播放器
-!播放器css
-@@||cdnjs.cloudflare.com/ajax/libs/*.(js|css)$domain=missav.ai|cdnjs.cloudflare.com
-
-!允许加载推荐内容，否则无推荐内容
-@@||missav.ai/build/assets/app.1aad5686.js$domain=missav.ai
-@@||missav.ai/build/assets/app.*.css$domain=missav.ai
-
-!允许加载m3u8地址
-@@||surrit.com/*/playlist.m3u8$domain=missav.ai
-
-!允许获取视频内容，否则无法播放
-@@||surrit.com/*/video.m3u8$domain=missav.ai
-@@||surrit.com/*/video*.jpeg$domain=missav.ai
 
 
-!允许加载播放器图标
-@@||missav.ai/img/favicon.ico$domain=missav.ai
-!允许加载语言国家图标，否则切换语言国家图标不显示
-@@||missav.ai/img/flags/*.png$domain=missav.ai
-!允许加载推荐内容，否则无推荐内容
-@@||client-rapi-missav.recombee.com^$domain=missav.ai
-!允许使用网站功能，否则无法收藏女优
-@@||missav.ai/api/actresses/*/save$domain=missav.ai
-@@||missav.ai/api/actresses/*/view$domain=missav.ai
-!允许使用网站功能，否则无法收藏影片
-@@||missav.ai/api/items/*/save$domain=missav.ai
-@@||missav.ai/api/items/*/view$domain=missav.ai
-!
-||missav.ws/js/plyr-plugin-thumbnail.js$domain=missav.ai
-||gstatic.com/recaptcha/$domain=missav.ai
-||google.com/recaptcha/$domain=missav.ai
+! Generated: 2025-02-18 | hanime1.me  智能优化规则集 
+! ====================[ 核心资源通道 ]==================== 
+! ■ 视频流媒体系统 
+@@||vdownload.hembed.com/*.mp4$media,domain=hanime1.me       ! HLS视频切片 
+@@||vdownload.hembed.com/image/*$image,domain=hanime1.me     ! 动态预览图 
+@@||img4.qy0.ru/data/*$image,domain=hanime1.me               ! 封面图CDN 
+ 
+! ■ 用户身份系统 
+@@||i.imgur.com^$domain=hanime1.me                           ! 主头像存储 
+@@||img.kemono.su*$image,domain=hanime1.me                   ! 用户上传内容 
+ 
+! ===================[ 页面完整性保障 ]==================== 
+! ◉ 框架基础组件 
+@@||hanime1.me/css/app.css$domain=hanime1.me                 ! 全局样式表 
+@@||hanime1.me/js/app.js$domain=hanime1.me                   ! 交互逻辑核心 
+@@||code.jquery.com/jquery-3.3.1.min.js$domain=hanime1.me    ! DOM操作依赖 
+ 
+! ◉ 安全验证系统 
+@@||hanime1.me/cdn-cgi/$domain=hanime1.me                    ! Cloudflare验证 
+ 
+! ===================[ 字体与排版系统 ]==================== 
+@@||fonts.googleapis.com^$font,domain=hanime1.me             ! 动态字体加载 
+@@||fonts.gstatic.com/*^$font,domain=hanime1.me              ! 字体文件源站 
+@@||fontawesome.com^$domain=hanime1.me                       ! 图标系统 
+ 
+! ===============[ 第三方服务白名单 ]===============
+! ▽ 前端工具链 
+@@||cdnjs.cloudflare.com/ajax/libs/$domain=hanime1.me        ! 公共库集合 
+@@||cdn.jsdelivr.net/npm/hls.js@latest                       ! 流媒体解析器 
+@@||cdn.jsdelivr.net/npm/js-cookie@3.0.0/dist/js.cookie.min.js  ! 会话管理 
+ 
+! ===============[ 隐私保护黑名单 ]===============
+||addthis.com^$domain=hanime1.me                             ! 社交追踪拦截 
 
-missav.ai,missav.ws,missav789.com##ul[class="mb-4 list-none text-nord14 grid grid-cols-2 gap-2"]
-missav.ai,missav.ws,missav789.com#?#div[class="under_player"]
-missav.ai,missav.ws,missav789.com#?#div[class="space-y-5 mb-5"]
-missav.ai,missav.ws,missav789.com#?#div[x-ref="stripchat"]
-missav.ai,missav.ws,missav789.com##div[class="pt-16 pb-4 lg:pb-0 px-4"]
-!视频右下角悬浮广告
-missav.ai,missav.ws,missav789.com##div[class="fixed right-2 bottom-2"]
 
-!视频页面右侧侧边栏 包含广告和重复推荐
-missav.ai,missav.ws,missav789.com##div[class="hidden lg:flex h-full ml-6 order-last"]
-!声明
-missav.ai,missav.ws,missav789.com##div[class="grid md:grid-cols-2 gap-8"]
-missav.ai,missav.ws,missav789.com##div[x-show="showNewDomainNotice"]
 
-!去除详情下方推广
-missav.ws#?#ul.space-y-2.mb-4.ml-4.list-disc.text-nord14 > *:remove()
-missav.ws#?#ul[class="mt-4 space-y-4"] > *:remove()
-!missav.ai$$script[type="text/javascript"]
-!播放跳转广告
-missav.ws#%#//scriptlet('document.createElement', 'htmlAds')
-!直播广告
-||myavlive.com^$domain=missav.ai
-!数据跟踪
-||static.cloudflareinsights.com/beacon.min.js/
-||gsjln04hd.com^$domain=missav.ai
-||missav.ai/cdn-cgi/challenge-platform/$domain=missav.ai
 
-!hanime1.me
-@@||hanime1.me/css/app.css$domain=hanime1.me
-@@||cdn.jsdelivr.net/npm/js-cookie@3.0.0/$domain=hanime1.me
-##网页cookie
-@@||code.jquery.com/jquery-3.3.1.min.js$domain=hanime1.me
-@@||cdn.plyr.io^$domain=hanime1.me
-@@||cdn.plyr.io^$domain=hanime1.me
-@@||hanime1.me/js/app.js$domain=hanime1.me
-##网页结构
-@@||vdownload.hembed.com/*.mp4$domain=hanime1.me
-@@||vdownload-*.com/*mp4$domain=hanime1.me
-##网页视频加载
-@@||vdownload.hembed.com/image/$domain=hanime1.me
-##网页预览图加载
-@@||cdn.jsdelivr.net/npm/hls.js@latest$domain=hanime1.me
-##网页视频加载
-##div[class*="hidden-xs"]:has-text(/點點廣告，贊助我們（●´∀｀）ノ♡/)
 !AD-REJECT
 ||img.strpst.com
 ||s3t3d2y8.afcdn.net

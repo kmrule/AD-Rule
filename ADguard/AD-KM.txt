@@ -122,6 +122,8 @@ missav.ws#%#//scriptlet('document.createElement',  'htmlAds')
 ! ===================[ 字体与排版系统 ]==================== 
 ! 动态字体加载 
 @@||fonts.googleapis.com^$font,domain=hanime1.me  
+! 动态字体CSS
+@@||fonts.googleapis.com^$font,domain=hanime1.me  
 ! 字体文件源站 
 @@||fonts.gstatic.com/*^$font,domain=hanime1.me  
 ! 图标系统 

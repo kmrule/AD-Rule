@@ -86,7 +86,8 @@ missav.*,missav123.com,missav888.com##div[x-ref="stripchat"]
 missav.*,missav123.com,missav888.com##div[class="pt-16 pb-4 lg:pb-0 px-4"]
 ! 声明信息容器 
 missav.*,missav123.com,missav888.com##div[class="grid md:grid-cols-2 gap-8"]
- 
+! 广告链接 
+missav.*,missav123.com,missav888.com##ul:has(> li a[href*="bit.ly"])
 ! 精确清除协议 
 ! 详情页诱导列表 
 missav.*,missav123.com,missav888.com#?#ul.space-y-2.mb-4.ml-4.list-disc.text-nord14  > *:remove()

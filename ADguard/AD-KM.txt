@@ -1,7 +1,7 @@
 [KM]
 ! Title: KM过滤
 ! Description: 去广告
-! Version: 1.0.0.4
+! Version: 1.0.0.5
 ! Homepage: https://github.com/kmrule/AD-Rule/tree/main/ADguard
 !-----------------------General advert blocking filters-----------------------!
 
@@ -13,30 +13,30 @@
  
 ! ■ 预览系统资源组 
 ! 缩略图CDN服务 
-@@||fivetiu.com/*.jpg$image,domain=missav.*,missav123.com,missav888.com 
+@@||fivetiu.com/*.jpg$image,domain=missav.*|missav123.com|missav888.com 
 ! 视频预览流媒体 
-@@||fivetiu.com/*.mp4$media,domain=missav.*,missav123.com,missav888.com 
+@@||fivetiu.com/*.mp4$media,domain=missav.*|missav123.com|missav888.com 
 ! 视频流媒体 
-@@||nineyu.com/*.jpg$image,domain=missav.*,missav123.com,missav888.com 
+@@||nineyu.com/*.jpg$image,domain=missav.*|missav123.com|missav888.com 
 
 
 ! ■ 主视频架构体系 
 ! HLS播放列表协议 
 @@||surrit.com/*/playlist.m3u8$domain=missav.*,missav123.com,missav888.com 
 ! 视频流核心通道 
-@@||surrit.com/*/video.m3u8$media,domain=missav.*,missav123.com,missav888.com 
+@@||surrit.com/*/video.m3u8$media,domain=missav.*|missav123.com|missav888.com 
 ! 动态帧截图服务 
-@@||surrit.com/*/video*.jpeg$image,domain=missav.*,missav123.com,missav888.com 
+@@||surrit.com/*/video*.jpeg$image,domain=missav.*|missav123.com|missav888.com 
  
 ! ================[ 界面完整性保障 ]================ 
  
 ! ◉ 视觉渲染系统 
 ! 动态字体加载机制 
-@@||missav*/fonts/*.woff2$font,domain=missav.*,missav123.com,missav888.com 
+@@||missav*/fonts/*.woff2$font,domain=missav.*|missav123.com|missav888.com 
 ! 播放器标识文件 
-@@||missav*/img/favicon.ico$image,domain=missav.*,missav123.com,missav888.com 
+@@||missav*/img/favicon.ico$image,domain=missav.*|missav123.com|missav888.com 
 ! 多语言标识资源 
-@@||missav*/img/flags/*.png$image,domain=missav.*,missav123.com,missav888.com 
+@@||missav*/img/flags/*.png$image,domain=missav.*|missav123.com|missav888.com 
  
 ! ◉ 播放器生态系统 
 ! 播放器依赖库 

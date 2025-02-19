@@ -1,7 +1,7 @@
 [KM]
 ! Title: KM过滤
 ! Description: 去广告
-! Version: 1.0.0.3
+! Version: 1.0.0.4
 ! Homepage: https://github.com/kmrule/AD-Rule/tree/main/ADguard
 !-----------------------General advert blocking filters-----------------------!
 
@@ -13,78 +13,85 @@
  
 ! ■ 预览系统资源组 
 ! 缩略图CDN服务 
-@@||fivetiu.com/*.jpg$image,domain=missav.ai  
+@@||fivetiu.com/*.jpg$image,domain=missav.*,missav123.com,missav888.com 
 ! 视频预览流媒体 
-@@||fivetiu.com/*.mp4$media,domain=missav.ai  
- 
+@@||fivetiu.com/*.mp4$media,domain=missav.*,missav123.com,missav888.com 
+! 视频流媒体 
+@@||nineyu.com/*.jpg$image,domain=missav.*,missav123.com,missav888.com 
+
+
 ! ■ 主视频架构体系 
 ! HLS播放列表协议 
-@@||surrit.com/*/playlist.m3u8$domain=missav.ai  
+@@||surrit.com/*/playlist.m3u8$domain=missav.*,missav123.com,missav888.com 
 ! 视频流核心通道 
-@@||surrit.com/*/video.m3u8$media,domain=missav.ai  
+@@||surrit.com/*/video.m3u8$media,domain=missav.*,missav123.com,missav888.com 
 ! 动态帧截图服务 
-@@||surrit.com/*/video*.jpeg$image,domain=missav.ai  
+@@||surrit.com/*/video*.jpeg$image,domain=missav.*,missav123.com,missav888.com 
  
 ! ================[ 界面完整性保障 ]================ 
  
 ! ◉ 视觉渲染系统 
 ! 动态字体加载机制 
-@@||missav.ai/fonts/*.woff2$font,domain=missav.ai  
+@@||missav*/fonts/*.woff2$font,domain=missav.*,missav123.com,missav888.com 
 ! 播放器标识文件 
-@@||missav.ai/img/favicon.ico$image,domain=missav.ai  
+@@||missav*/img/favicon.ico$image,domain=missav.*,missav123.com,missav888.com 
 ! 多语言标识资源 
-@@||missav.ai/img/flags/*.png$image,domain=missav.ai  
+@@||missav*/img/flags/*.png$image,domain=missav.*,missav123.com,missav888.com 
  
 ! ◉ 播放器生态系统 
 ! 播放器依赖库 
-@@||cdnjs.cloudflare.com/ajax/libs/*.(js |css)$domain=missav.ai |cdnjs.cloudflare.com  
+@@||cdnjs.cloudflare.com/ajax/libs/*.(js |css)$domain=missav.*,missav123.com,missav888.com|cdnjs.cloudflare.com  
 ! 推荐算法接口 
-@@||client-rapi-missav.recombee.com^$domain=missav.ai  
+@@||client-rapi-missav.recombee.com^$domain=missav.*,missav123.com,missav888.com 
  
 ! ================[ 核心功能API ]===================
  
 ! ▽ 用户交互协议 
 ! 演员收藏/浏览接口 
-@@||missav.ai/api/actresses/*/(save |view)$domain=missav.ai  
+@@||missav.ai/api/actresses/*/(save |view)$domain=missav.*,missav123.com,missav888.com
 ! 影片收藏/浏览接口 
-@@||missav.ai/api/items/*/(save |view)$domain=missav.ai  
- 
+@@||missav*/api/items/*/(save |view)$domain=missav.*,missav123.com,missav888.com
+! 演员/影片 收藏接口
+@@||missav*.*/api/*/save
+
 ! ▽ 动态资源体系 
 ! 前端编译产物路径 
-@@||missav.ai/build/assets/app.*.(js |css)$domain=missav.ai  
+@@||missav*/build/assets/app.*.(js |css)$domain=missav.*,missav123.com,missav888.com 
  
 ! ================[ 隐私防御矩阵 ]===================
  
 ! ▼ 广告追踪防御组 
-||myavlive.com^$domain=missav.ai  
+||myavlive.com^$domain=missav.*,missav123.com,missav888.com 
 ||static.cloudflareinsights.com/beacon.min.js/ 
-||gsjln04hd.com^$domain=missav.ai  
+||gsjln04hd.com^$domain=missav.*,missav123.com,missav888.com 
  
 ! ▼ 验证系统干扰防御 
-||gstatic.com/recaptcha/$domain=missav.ai  
-||google.com/recaptcha/$domain=missav.ai  
+||gstatic.com/recaptcha/$domain=missav.*,missav123.com,missav888.com 
+||google.com/recaptcha/$domain=missav.*,missav123.com,missav888.com 
  
 ! ================[ DOM净化工程 ]===================
  
 ! 播放器体验优化组 
 ! 悬浮广告容器 
-missav.*##div[class="fixed right-2 bottom-2"]
+missav.*,missav123.com,missav888.com##div[class="fixed right-2 bottom-2"]
 ! 侧边栏推广模块 
-missav.*##div[class="hidden lg:flex h-full ml-6 order-last"]
- 
+missav.*,missav123.com,missav888.com##div[class="hidden lg:flex h-full ml-6 order-last"]
+! 顶部推广
+missav.*,missav123.com,missav888.com##a[class="text-base leading-6 font-medium text-nord6 hover:text-primary focus:outline-none"]
+
 ! 信息流净化组 
 ! 直播入口组件 
-missav.*##div[x-ref="stripchat"]
+missav.*,missav123.com,missav888.com##div[x-ref="stripchat"]
 ! 底部占位符区块 
-missav.*##div[class="pt-16 pb-4 lg:pb-0 px-4"]
+missav.*,missav123.com,missav888.com##div[class="pt-16 pb-4 lg:pb-0 px-4"]
 ! 声明信息容器 
-missav.*##div[class="grid md:grid-cols-2 gap-8"]
+missav.*,missav123.com,missav888.com##div[class="grid md:grid-cols-2 gap-8"]
  
 ! 精确清除协议 
 ! 详情页诱导列表 
-missav.ws#?#ul.space-y-2.mb-4.ml-4.list-disc.text-nord14  > *:remove()
+missav.*,missav123.com,missav888.com#?#ul.space-y-2.mb-4.ml-4.list-disc.text-nord14  > *:remove()
 ! 播放劫持防御机制 
-missav.ws#%#//scriptlet('document.createElement',  'htmlAds')
+missav.*,missav123.com,missav888.com#%#//scriptlet('document.createElement',  'htmlAds')
 
 
 

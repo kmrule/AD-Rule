@@ -1,7 +1,7 @@
 [KM]
 ! Title: KM过滤
 ! Description: 去广告
-! Version: 1.0.0.9
+! Version: 1.0.1.0
 ! Homepage: https://github.com/kmrule/AD-Rule/tree/main/ADguard
 !-----------------------General advert blocking filters-----------------------!
 
@@ -9,18 +9,32 @@
 !屏蔽ikuai爱快登录后台频繁出现的绑定爱快e云弹窗
 
 google.com#?#div[class="MjjYud"]:has(div[class="byrV5b"]:has-text(/news.qq.com/))
-google.com#?#div[class="MjjYud"]:has(div[class="byrV5b"]:has-text(/news.sohu.com/))
+google.com#?#div[class="MjjYud"]:has(div[class="byrV5b"]:has-text(/new.qq.com/))
+google.com#?#div[class="MjjYud"]:has(div[class="byrV5b"]:has-text(/news.sohu.com/))  
+google.com#?#div[class="MjjYud"]:has(div[class="byrV5b"]:has-text(/www.sohu.com/))
+google.com#?#div[class="MjjYud"]:has(div[class="byrV5b"]:has-text(/m.sohu.com/))
 google.com#?#div[class="MjjYud"]:has(div[class="byrV5b"]:has-text(/www.thepaper.cn/))
 google.com#?#div[class="MjjYud"]:has(div[class="byrV5b"]:has-text(/www.huxiu.com/))
 google.com#?#div[class="MjjYud"]:has(div[class="byrV5b"]:has-text(/news.sina.com.cn/))
+google.com#?#div[class="MjjYud"]:has(div[class="byrV5b"]:has-text(/finance.sina.com.cn/))
 google.com#?#div[class="MjjYud"]:has(div[class="byrV5b"]:has-text(/(news.163.com/))
+google.com#?#div[class="MjjYud"]:has(div[class="byrV5b"]:has-text(/(www.163.com/))
 google.com#?#div[class="MjjYud"]:has(div[class="byrV5b"]:has-text(/guancha.cn/))
 google.com#?#div[class="MjjYud"]:has(div[class="byrV5b"]:has-text(/toutiao.com/))
 google.com#?#div[class="MjjYud"]:has(div[class="byrV5b"]:has-text(/news.baidu.com/))
 google.com#?#div[class="MjjYud"]:has(div[class="byrV5b"]:has-text(/ifeng.com/))
+google.com#?#div[class="MjjYud"]:has(div[class="byrV5b"]:has-text(/i.ifeng.com/))
 google.com#?#div[class="MjjYud"]:has(div[class="byrV5b"]:has-text(/huxiu.com/))
 google.com#?#div[class="MjjYud"]:has(div[class="byrV5b"]:has-text(/hupu.com/))
+google.com#?#div[class="MjjYud"]:has(div[class="byrV5b"]:has-text(/bk.taobao.com/))
+google.com#?#div[class="MjjYud"]:has(div[class="byrV5b"]:has-text(/hoopchina.com/))
+google.com#?#div[class="MjjYud"]:has(div[class="byrV5b"]:has-text(/dutenews.com/))
+google.com#?#div[class="MjjYud"]:has(div[class="byrV5b"]:has-text(/henandaily.cn/))
+google.com#?#div[class="MjjYud"]:has(div[class="byrV5b"]:has-text(/ycwb.com/))
+google.com#?#div[class="MjjYud"]:has(div[class="byrV5b"]:has-text(/dahe.cn/))
+google.com#?#div[class="MjjYud"]:has(div[class="byrV5b"]:has-text(/jfdaily.com/))
 ! 谷歌搜索结果屏蔽
+
 
 
 

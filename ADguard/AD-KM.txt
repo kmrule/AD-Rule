@@ -1,25 +1,25 @@
 [KM]
 ! Title: KM过滤
 ! Description: 去广告
-! Version: 1.0.0.8
+! Version: 1.0.0.9
 ! Homepage: https://github.com/kmrule/AD-Rule/tree/main/ADguard
 !-----------------------General advert blocking filters-----------------------!
 
 192.168.64.1###app > div > div:nth-of-type(2):has-text(/掌上办，更方便/)
 !屏蔽ikuai爱快登录后台频繁出现的绑定爱快e云弹窗
 
-google.com#?#div[class="MjjYud"]:has(cite[class="tjvcx GvPZzd dTxz9 cHaqb"]:has-text(/news.qq.com/))
-google.com#?#div[class="MjjYud"]:has(cite[class="tjvcx GvPZzd dTxz9 cHaqb"]:has-text(/news.sohu.com/))
-google.com#?#div[class="MjjYud"]:has(cite[class="tjvcx GvPZzd dTxz9 cHaqb"]:has-text(/www.thepaper.cn/))
-google.com#?#div[class="MjjYud"]:has(cite[class="tjvcx GvPZzd dTxz9 cHaqb"]:has-text(/www.huxiu.com/))
-google.com#?#div[class="MjjYud"]:has(cite[class="tjvcx GvPZzd dTxz9 cHaqb"]:has-text(/news.sina.com.cn/))
-google.com#?#div[class="MjjYud"]:has(cite[class="tjvcx GvPZzd dTxz9 cHaqb"]:has-text(/(news.163.com/))
-google.com#?#div[class="MjjYud"]:has(cite[class="tjvcx GvPZzd dTxz9 cHaqb"]:has-text(/guancha.cn/))
-google.com#?#div[class="MjjYud"]:has(cite[class="tjvcx GvPZzd dTxz9 cHaqb"]:has-text(/toutiao.com/))
-google.com#?#div[class="MjjYud"]:has(cite[class="tjvcx GvPZzd dTxz9 cHaqb"]:has-text(/news.baidu.com/))
-google.com#?#div[class="MjjYud"]:has(cite[class="tjvcx GvPZzd dTxz9 cHaqb"]:has-text(/ifeng.com/))
-google.com#?#div[class="MjjYud"]:has(cite[class="tjvcx GvPZzd dTxz9 cHaqb"]:has-text(/huxiu.com/))
-google.com#?#div[class="MjjYud"]:has(cite[class="tjvcx GvPZzd dTxz9 cHaqb"]:has-text(/hupu.com/))
+google.com#?#div[class="MjjYud"]:has(div[class="byrV5b"]:has-text(/news.qq.com/))
+google.com#?#div[class="MjjYud"]:has(div[class="byrV5b"]:has-text(/news.sohu.com/))
+google.com#?#div[class="MjjYud"]:has(div[class="byrV5b"]:has-text(/www.thepaper.cn/))
+google.com#?#div[class="MjjYud"]:has(div[class="byrV5b"]:has-text(/www.huxiu.com/))
+google.com#?#div[class="MjjYud"]:has(div[class="byrV5b"]:has-text(/news.sina.com.cn/))
+google.com#?#div[class="MjjYud"]:has(div[class="byrV5b"]:has-text(/(news.163.com/))
+google.com#?#div[class="MjjYud"]:has(div[class="byrV5b"]:has-text(/guancha.cn/))
+google.com#?#div[class="MjjYud"]:has(div[class="byrV5b"]:has-text(/toutiao.com/))
+google.com#?#div[class="MjjYud"]:has(div[class="byrV5b"]:has-text(/news.baidu.com/))
+google.com#?#div[class="MjjYud"]:has(div[class="byrV5b"]:has-text(/ifeng.com/))
+google.com#?#div[class="MjjYud"]:has(div[class="byrV5b"]:has-text(/huxiu.com/))
+google.com#?#div[class="MjjYud"]:has(div[class="byrV5b"]:has-text(/hupu.com/))
 ! 谷歌搜索结果屏蔽
 
 

@@ -1,7 +1,7 @@
 [KM]
 ! Title: KM过滤
 ! Description: 去广告
-! Version: 1.0.1.0
+! Version: 1.0.1.1
 ! Homepage: https://github.com/kmrule/AD-Rule/tree/main/ADguard
 !-----------------------General advert blocking filters-----------------------!
 
@@ -33,6 +33,19 @@ google.com#?#div[class="MjjYud"]:has(div[class="byrV5b"]:has-text(/henandaily.cn
 google.com#?#div[class="MjjYud"]:has(div[class="byrV5b"]:has-text(/ycwb.com/))
 google.com#?#div[class="MjjYud"]:has(div[class="byrV5b"]:has-text(/dahe.cn/))
 google.com#?#div[class="MjjYud"]:has(div[class="byrV5b"]:has-text(/jfdaily.com/))
+
+google.com#?#div[class="MjjYud"]:has(div[class="byrV5b"]:has-text(/fadada.com/))
+google.com#?#div[class="MjjYud"]:has(div[class="byrV5b"]:has-text(/59fayi.com/))
+google.com#?#div[class="MjjYud"]:has(div[class="byrV5b"]:has-text(/benbenweb.com/))
+google.com#?#div[class="MjjYud"]:has(div[class="byrV5b"]:has-text(/xuanhonglaw.com/))
+google.com#?#div[class="MjjYud"]:has(div[class="byrV5b"]:has-text(/66law.cn/))
+google.com#?#div[class="MjjYud"]:has(div[class="byrV5b"]:has-text(/51wf.cn/))
+google.com#?#div[class="MjjYud"]:has(div[class="byrV5b"]:has-text(/tjldflzxw.com/))
+google.com#?#div[class="MjjYud"]:has(div[class="byrV5b"]:has-text(/055110.com/))
+google.com#?#div[class="MjjYud"]:has(div[class="byrV5b"]:has-text(/kwm.com/))
+google.com#?#div[class="MjjYud"]:has(div[class="byrV5b"]:has-text(/bjlaw.org/))
+
+
 ! 谷歌搜索结果屏蔽
 
 

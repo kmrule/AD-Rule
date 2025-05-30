@@ -1,7 +1,7 @@
 [KM]
 ! Title: KM过滤
 ! Description: 去广告
-! Version: 1.0.1.2
+! Version: 1.0.1.3
 ! Homepage: https://github.com/kmrule/AD-Rule/tree/main/ADguard
 !-----------------------General advert blocking filters-----------------------!
 
@@ -17,8 +17,8 @@ google.com#?#div[class="MjjYud"]:has(div[class="byrV5b"]:has-text(/www.thepaper.
 google.com#?#div[class="MjjYud"]:has(div[class="byrV5b"]:has-text(/www.huxiu.com/))
 google.com#?#div[class="MjjYud"]:has(div[class="byrV5b"]:has-text(/news.sina.com.cn/))
 google.com#?#div[class="MjjYud"]:has(div[class="byrV5b"]:has-text(/finance.sina.com.cn/))
-google.com#?#div[class="MjjYud"]:has(div[class="byrV5b"]:has-text(/(news.163.com/))
-google.com#?#div[class="MjjYud"]:has(div[class="byrV5b"]:has-text(/(www.163.com/))
+google.com#?#div[class="MjjYud"]:has(div[class="byrV5b"]:has-text(/news.163.com/))
+google.com#?#div[class="MjjYud"]:has(div[class="byrV5b"]:has-text(/www.163.com/))
 google.com#?#div[class="MjjYud"]:has(div[class="byrV5b"]:has-text(/guancha.cn/))
 google.com#?#div[class="MjjYud"]:has(div[class="byrV5b"]:has-text(/toutiao.com/))
 google.com#?#div[class="MjjYud"]:has(div[class="byrV5b"]:has-text(/news.baidu.com/))

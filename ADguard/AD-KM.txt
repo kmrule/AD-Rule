@@ -1,7 +1,7 @@
 [KM]
 ! Title: KM过滤
 ! Description: 去广告
-! Version: 1.0.1.3
+! Version: 1.0.1.4
 ! Homepage: https://github.com/kmrule/AD-Rule/tree/main/ADguard
 !-----------------------General advert blocking filters-----------------------!
 
@@ -19,6 +19,19 @@ google.com#?#div[class="MjjYud"]:has(div[class="byrV5b"]:has-text(/news.sina.com
 google.com#?#div[class="MjjYud"]:has(div[class="byrV5b"]:has-text(/finance.sina.com.cn/))
 google.com#?#div[class="MjjYud"]:has(div[class="byrV5b"]:has-text(/news.163.com/))
 google.com#?#div[class="MjjYud"]:has(div[class="byrV5b"]:has-text(/www.163.com/))
+google.com#?#div[class="MjjYud"]:has(div[class="byrV5b"]:has-text(/m.163.com/))
+google.com#?#div[class="MjjYud"]:has(div[class="byrV5b"]:has-text(/live.163.com/))
+google.com#?#div[class="MjjYud"]:has(div[class="byrV5b"]:has-text(/sports.163.com/))
+google.com#?#div[class="MjjYud"]:has(div[class="byrV5b"]:has-text(/ent.163.com/))
+google.com#?#div[class="MjjYud"]:has(div[class="byrV5b"]:has-text(/ad.163.com/))
+google.com#?#div[class="MjjYud"]:has(div[class="byrV5b"]:has-text(/wp.m.163.com/))
+google.com#?#div[class="MjjYud"]:has(div[class="byrV5b"]:has-text(/tech.163.com/))
+google.com#?#div[class="MjjYud"]:has(div[class="byrV5b"]:has-text(/money.163.com/))
+google.com#?#div[class="MjjYud"]:has(div[class="byrV5b"]:has-text(/discovery.163.com/))
+google.com#?#div[class="MjjYud"]:has(div[class="byrV5b"]:has-text(/c.m.163.com/))
+google.com#?#div[class="MjjYud"]:has(div[class="byrV5b"]:has-text(/3g.163.com/))
+google.com#?#div[class="MjjYud"]:has(div[class="byrV5b"]:has-text(/headline.m.163.com/))
+
 google.com#?#div[class="MjjYud"]:has(div[class="byrV5b"]:has-text(/guancha.cn/))
 google.com#?#div[class="MjjYud"]:has(div[class="byrV5b"]:has-text(/toutiao.com/))
 google.com#?#div[class="MjjYud"]:has(div[class="byrV5b"]:has-text(/news.baidu.com/))

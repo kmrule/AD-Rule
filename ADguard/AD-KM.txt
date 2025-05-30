@@ -1,7 +1,7 @@
 [KM]
 ! Title: KM过滤
 ! Description: 去广告
-! Version: 1.0.1.1
+! Version: 1.0.1.2
 ! Homepage: https://github.com/kmrule/AD-Rule/tree/main/ADguard
 !-----------------------General advert blocking filters-----------------------!
 
@@ -46,9 +46,16 @@ google.com#?#div[class="MjjYud"]:has(div[class="byrV5b"]:has-text(/kwm.com/))
 google.com#?#div[class="MjjYud"]:has(div[class="byrV5b"]:has-text(/bjlaw.org/))
 
 
+
+
 ! 谷歌搜索结果屏蔽
 
+google.com#?#div[class="MjjYud"]:has(a[href*="themeName="])
+google.com#?#div[class="MjjYud"]:has(a[href*="ouname="])
+google.com#?#div[class="MjjYud"]:has(a[href*="keywords="])
+google.com#?#div[class="MjjYud"]:has(a[href*="keyword="])
 
+! 谷歌搜索结果屏蔽SEO投毒
 
 
 ! Generated: 2025-02-18 23:54 | missav.ai  全功能规则集（语义化重构版）

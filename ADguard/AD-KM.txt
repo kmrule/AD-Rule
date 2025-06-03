@@ -1,7 +1,7 @@
 [KM]
 ! Title: KM过滤
 ! Description: 去广告
-! Version: 1.0.1.5
+! Version: 1.0.1.6
 ! Homepage: https://github.com/kmrule/AD-Rule/edit/main/ADguard/AD-KM.txt
 !-----------------------General advert blocking filters-----------------------!
 
@@ -70,7 +70,8 @@ google.com#?#div[class="MjjYud"]:has(a[href*="keyword="])
 
 ! 谷歌搜索结果屏蔽SEO投毒
 
-missav.ai#?#div:has(> div.thumbnail.group:has(:has-text(/OPBD-|OTLD-|YOZ-|NHDT-|OPUD-|NHB-|TBX-|EEA-|YSN-|PRB-|KCK-|PTS-|HYBR-|SKCK-|KTKL-|BINI-|CMV-|DASD-|MBMH-|AGCN-|MGFX-|ENDS-|SDDE-|TMGX-|CMN-|TMGV-|741P016-|NVH-|MOOC-|KTB-|OOTS-|BSET-|TCD-|FEM-|TPNS-|ARAN-|CNY-|BOKD-|IDRK-|PMGG-|TOTK-|HSM-|TANP-|TIMD-|DASS-|SXMA-|NEO-|BTIS-|HERY-|ANZ-|PETS-|ASIA-|HAZUH-|AGAV-|SAL-|NAIAD-|KTKN-|HFC-|MAQQH-|HAZU-|MANX-|YAKO-|GNHDB-|WAAA-|VAIAV-|DAZD-|RCTD-|HUST-|AVSA-|QRDA-|MESH-|OPPW-|MIAB-|ACZD-|PAP-|TPIN-|TANF-|ZOOO-|DNJR-|MBM-|HUSR-|SACZ-|SPSB-|KEPA-|GHNU-|NHDTB-|CEMD-|BONY-|AUKT-|GUN-|ACZ-/))):remove()
+missav.ai#?#div:has(> div.thumbnail.group:has(:has-text(/^\s+(?:NXG-|CMF-|SMPD-|AUKS-|ATID-|SGSR-|LHBY-|FSMD-|LBOY-|AIKB-|HGQ-|KCOD-|PRP-|MIGD-|OPBD-|OTLD-|YOZ-|NHDT-|OPUD-|NHB-|TBX-|EEA-|YSN-|PRB-|KCK-|PTS-|HYBR-|SKCK-|KTKL-|BINI-|CMV-|DASD-|MBMH-|AGCN-|MGFX-|ENDS-|SDDE-|TMGX-|CMN-|TMGV-|741P016-|NVH-|MOOC-|KTB-|OOTS-|BSET-|TCD-|FEM-|TPNS-|ARAN-|CNY-|BOKD-|IDRK-|PMGG-|TOTK-|HSM-|TANP-|TIMD-|DASS-|SXMA-|NEO-|BTIS-|HERY-|ANZ-|PETS-|ASIA-|HAZUH-|AGAV-|SAL-|NAIAD-|KTKN-|HFC-|MAQQH-|HAZU-|MANX-|YAKO-|GNHDB-|WAAA-|VAIAV-|DAZD-|RCTD-|HUST-|AVSA-|QRDA-|MESH-|OPPW-|MIAB-|ACZD-|PAP-|TPIN-|TANF-|ZOOO-|DNJR-|MBM-|HUSR-|SACZ-|SPSB-|KEPA-|GHNU-|NHDTB-|CEMD-|BONY-|AUKT-|GUN-|ACZ-)/i))):remove()
+
 missav.ai#?#div:has(> div.thumbnail.group:has(:has-text(/伪娘|人妖|扶她|变形|公鸡|屌丝|雌雄|变性|变装|男女儿|假女儿|装癖|女装|美少年|男孩的女儿|男人的女儿|扶他|男乃娘|跨性别/))):remove()
 
 ! Generated: 2025-02-18 23:54 | missav.ai  全功能规则集（语义化重构版）

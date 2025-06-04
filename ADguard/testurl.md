@@ -1,9 +1,4 @@
-[拨打客服专线](tel:+886212345678)
+**启动 Things 应用的“今日”视图：**
 
-[打开 Things 的今日待办](things:///show?id=today)
-
-[在 Apple Music 中搜索“五月天”](music://search?term=五月天)
-
-[打开计算器](calculator://)
-
-[在 Obsidian 中新建笔记](obsidian://new?vault=MyVault&name=NewNote)
+请复制以下文本，粘贴到浏览器的地址栏或 Mac 的 Spotlight 搜索中，然后按下回车键：
+`things:///show?id=today`

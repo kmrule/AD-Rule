@@ -1,0 +1,76 @@
+# 微软翻译（Edge API）
+DOMAIN,api-edge.cognitive.microsofttranslator.com
+
+# 谷歌翻译
+DOMAIN,translate.googleapis.com
+
+# 智谱 GLM 翻译
+DOMAIN,open.bigmodel.cn
+
+# Deepl
+DOMAIN,api.deepl.com
+
+# OpenAI
+DOMAIN,api.openai.com
+
+# DeepSeek
+DOMAIN,api.deepseek.com
+
+# Gemini
+DOMAIN,generativelanguage.googleapis.com
+
+# Claude
+DOMAIN,api.anthropic.com
+
+# 智谱 4 PLUS 仅限会员（跳过）
+
+# 硅基流动翻译
+DOMAIN,api.siliconflow.cn
+
+# Yandex 翻译
+DOMAIN,translate.yandex.net
+
+# 腾讯交互翻译
+DOMAIN,transmart.qq.com
+
+# 字节跳动火山方舟大模型
+DOMAIN,ark.cn-beijing.volces.com
+
+# 阿里云百炼大模型
+DOMAIN,dashscope.aliyuncs.com
+
+# 百度千帆大模型
+DOMAIN,aip.baidubce.com
+
+# 腾讯混元大模型
+DOMAIN,hunyuan.tencentcloudapi.com
+
+# 零一万物
+DOMAIN,api.lingyiwanwu.com
+
+# 微软 Azure 机器翻译
+DOMAIN,api.cognitive.microsofttranslator.com
+
+# 火山机器翻译
+DOMAIN,translate.volcengine.com
+
+# 阿里云机器翻译
+DOMAIN,mt.aliyuncs.com
+
+# 百度机器翻译
+DOMAIN,api.fanyi.baidu.com
+
+# 腾讯云机器翻译
+DOMAIN,tmt.tencentcloudapi.com
+
+# 有道翻译
+DOMAIN,openapi.youdao.com
+
+# 彩云小译
+DOMAIN,api.interpreter.caiyunai.com
+
+# OpenL
+DOMAIN,api.openl.club
+
+# 小牛翻译
+DOMAIN,api.niutrans.com

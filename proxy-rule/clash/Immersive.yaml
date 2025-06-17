@@ -5,6 +5,7 @@ payload:
   # 谷歌翻译
   - DOMAIN,translate.googleapis.com
   - DOMAIN,translate-pa.googleapis.com
+  
   # 智谱 GLM 翻译
   - DOMAIN,open.bigmodel.cn
 

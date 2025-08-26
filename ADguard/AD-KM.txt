@@ -1,7 +1,7 @@
 [KM]
 ! Title: KM过滤
 ! Description: 去广告
-! Version: 1.0.2.0
+! Version: 1.0.2.1
 ! Homepage: https://github.com/kmrule/AD-Rule/edit/main/ADguard/AD-KM.txt
 !-----------------------General advert blocking filters-----------------------!
 
@@ -101,7 +101,9 @@ missav.ai#?#div:has(> div.thumbnail.group:has(:has-text(/伪娘|女装少年|女
 @@||surrit.com/*/video.m3u8$media,domain=missav.*|missav123.com|missav888.com 
 ! 动态帧截图服务 
 @@||surrit.com/*/video*.jpeg$image,domain=missav.*|missav123.com|missav888.com 
- 
+@@||missav.ai/build/assets/app.*.js^$domain=missav.*,missav123.com,missav888.com 
+@@||missav.ai/build/assets/app.*.css^$domain=missav.*,missav123.com,missav888.com 
+@@||missav.ai/img/favicon.png^$domain=missav.*,missav123.com,missav888.com 
 ! ================[ 界面完整性保障 ]================ 
  
 ! ◉ 视觉渲染系统 

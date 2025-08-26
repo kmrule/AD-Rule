@@ -1,7 +1,7 @@
 [KM]
 ! Title: KM过滤
 ! Description: 去广告
-! Version: 1.0.2.2
+! Version: 1.0.2.3
 ! Last modified: 2025-8-27
 ! Expires: 5 分钟之前
 ! Homepage: https://github.com/kmrule/AD-Rule/tree/main/ADguard
@@ -99,14 +99,14 @@ missav.ai#?#div:has(> div.thumbnail.group:has(:has-text(/伪娘|女装少年|女
 
 ! ■ 主视频架构体系 
 ! HLS播放列表协议 
-@@||surrit.com/*/playlist.m3u8$domain=missav.*,missav123.com,missav888.com 
+@@||surrit.com/*/playlist.m3u8$domain=missav.*|missav123.com|missav888.com
 ! 视频流核心通道 
 @@||surrit.com/*/video.m3u8$media,domain=missav.*|missav123.com|missav888.com 
 ! 动态帧截图服务 
 @@||surrit.com/*/video*.jpeg$image,domain=missav.*|missav123.com|missav888.com 
-@@||missav.ai/build/assets/app.*.js^$domain=missav.*,missav123.com,missav888.com 
-@@||missav.ai/build/assets/app.*.css^$domain=missav.*,missav123.com,missav888.com 
-@@||missav.ai/img/favicon.png^$domain=missav.*,missav123.com,missav888.com 
+@@||missav.ai/build/assets/app.*.js^$domain=missav.*|missav123.com|missav888.com
+@@||missav.ai/build/assets/app.*.css^$domain=missav.*|missav123.com|missav888.com
+@@||missav.ai/img/favicon.png^$domain=missav.*|missav123.com|missav888.com
 ! ================[ 界面完整性保障 ]================ 
  
 ! ◉ 视觉渲染系统 
@@ -119,34 +119,34 @@ missav.ai#?#div:has(> div.thumbnail.group:has(:has-text(/伪娘|女装少年|女
  
 ! ◉ 播放器生态系统 
 ! 播放器依赖库 
-@@||cdnjs.cloudflare.com/ajax/libs/*.(js |css)$domain=missav.*,missav123.com,missav888.com|cdnjs.cloudflare.com  
+@@||cdnjs.cloudflare.com/ajax/libs/*.(js |css)$domain=missav.*|missav123.com|missav888.com|cdnjs.cloudflare.com  
 ! 推荐算法接口
-@@||client-rapi-missav.recombee.com^$domain=missav.*,missav123.com,missav888.com 
+@@||client-rapi-missav.recombee.com^$domain=missav.*|missav123.com|missav888.com
  
 ! ================[ 核心功能API ]===================
  
 ! ▽ 用户交互协议 
 ! 演员收藏/浏览接口 
-@@||missav.ai/api/actresses/*/(save |view)$domain=missav.*,missav123.com,missav888.com
+@@||missav.ai/api/actresses/*/(save |view)$domain=missav.*|missav123.com|missav888.com
 ! 影片收藏/浏览接口 
-@@||missav*/api/items/*/(save |view)$domain=missav.*,missav123.com,missav888.com
+@@||missav*/api/items/*/(save |view)$domain=missav.*|missav123.com|missav888.com
 ! 演员/影片 收藏接口
 @@||missav*.*/api/*/save
 
 ! ▽ 动态资源体系 
 ! 前端编译产物路径 
-@@||missav*/build/assets/app.*.(js |css)$domain=missav.*,missav123.com,missav888.com 
+@@||missav*/build/assets/app.*.(js |css)$domain=missav.*|missav123.com|missav888.com
  
 ! ================[ 隐私防御矩阵 ]===================
  
 ! ▼ 广告追踪防御组 
-||myavlive.com^$domain=missav.*,missav123.com,missav888.com 
+||myavlive.com^$domain=missav.*|missav123.com|missav888.com
 ||static.cloudflareinsights.com/beacon.min.js/ 
-||gsjln04hd.com^$domain=missav.*,missav123.com,missav888.com 
+||gsjln04hd.com^$domain=missav.*|missav123.com|missav888.com
  
 ! ▼ 验证系统干扰防御 
-||gstatic.com/recaptcha/$domain=missav.*,missav123.com,missav888.com 
-||google.com/recaptcha/$domain=missav.*,missav123.com,missav888.com 
+||gstatic.com/recaptcha/$domain=missav.*|missav123.com|missav888.com
+||google.com/recaptcha/$domain=missav.*|missav123.com|missav888.com
  
 ! ================[ DOM净化工程 ]===================
  

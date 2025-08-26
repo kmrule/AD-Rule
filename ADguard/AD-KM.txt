@@ -1,7 +1,7 @@
 [KM]
 ! Title: KM过滤
 ! Description: 去广告
-! Version: 1.0.1.9
+! Version: 1.0.2.0
 ! Homepage: https://github.com/kmrule/AD-Rule/edit/main/ADguard/AD-KM.txt
 !-----------------------General advert blocking filters-----------------------!
 
@@ -91,7 +91,8 @@ missav.ai#?#div:has(> div.thumbnail.group:has(:has-text(/伪娘|女装少年|女
 @@||fivetiu.com/*.mp4$media,domain=missav.*|missav123.com|missav888.com 
 ! 视频流媒体 
 @@||nineyu.com/*.jpg$image,domain=missav.*|missav123.com|missav888.com 
-
+! 封面图
+@@||fourhoi.com/*.jpg$image,domain=missav.*|missav123.com|missav888.com 
 
 ! ■ 主视频架构体系 
 ! HLS播放列表协议 
@@ -114,7 +115,8 @@ missav.ai#?#div:has(> div.thumbnail.group:has(:has-text(/伪娘|女装少年|女
 ! ◉ 播放器生态系统 
 ! 播放器依赖库 
 @@||cdnjs.cloudflare.com/ajax/libs/*.(js |css)$domain=missav.*,missav123.com,missav888.com|cdnjs.cloudflare.com  
-! 推荐算法接口 
+! 推荐算法接口
+@@||https://missav.ai/build/assets/app.1aad5686.js$domain=missav.*,missav123.com,missav888.com 
 @@||client-rapi-missav.recombee.com^$domain=missav.*,missav123.com,missav888.com 
  
 ! ================[ 核心功能API ]===================

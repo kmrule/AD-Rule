@@ -1,7 +1,7 @@
 [KM]
 ! Title: KM过滤
 ! Description: 去广告
-! Version: 1.0.2.3
+! Version: 1.0.2.4
 ! Last modified: 2025-8-27
 ! Expires: 5 分钟之前
 ! Homepage: https://github.com/kmrule/AD-Rule/tree/main/ADguard
@@ -152,26 +152,26 @@ missav.ai#?#div:has(> div.thumbnail.group:has(:has-text(/伪娘|女装少年|女
  
 ! 播放器体验优化组 
 ! 悬浮广告容器 
-missav.*,missav123.com,missav888.com##div[class="fixed right-2 bottom-2"]
+missav.ai,missav.ws,missav123.com,missav888.com##div[class="fixed right-2 bottom-2"]
 ! 侧边栏推广模块 
-missav.*,missav123.com,missav888.com##div[class="hidden lg:flex h-full ml-6 order-last"]
+missav.ai,missav.ws,missav123.com,missav888.com##div[class="hidden lg:flex h-full ml-6 order-last"]
 ! 顶部推广
-missav.*,missav123.com,missav888.com##a[class="text-base leading-6 font-medium text-nord6 hover:text-primary focus:outline-none"]
+missav.ai,missav.ws,missav123.com,missav888.com##a[class="text-base leading-6 font-medium text-nord6 hover:text-primary focus:outline-none"]
 
 ! 信息流净化组 
 ! 直播入口组件 
-missav.*,missav123.com,missav888.com##div[x-ref="stripchat"]
+missav.ai,missav.ws,missav123.com,missav888.com##div[x-ref="stripchat"]
 ! 底部占位符区块 
-missav.*,missav123.com,missav888.com##div[class="pt-16 pb-4 lg:pb-0 px-4"]
+missav.ai,missav.ws,missav123.com,missav888.com##div[class="pt-16 pb-4 lg:pb-0 px-4"]
 ! 声明信息容器 
-missav.*,missav123.com,missav888.com##div[class="grid md:grid-cols-2 gap-8"]
+missav.ai,missav.ws,missav123.com,missav888.com##div[class="grid md:grid-cols-2 gap-8"]
 ! 广告链接 
-missav.*,missav123.com,missav888.com##ul:has(> li a[href*="bit.ly"])
+missav.ai,missav.ws,missav123.com,missav888.com##ul:has(a[href*="myavlive.com"])
 ! 精确清除协议 
 ! 详情页诱导列表 
-missav.*,missav123.com,missav888.com#?#ul.space-y-2.mb-4.ml-4.list-disc.text-nord14  > *:remove()
+missav.ai,missav.ws,missav123.com,missav888.com#?#ul.space-y-2.mb-4.ml-4.list-disc.text-nord14  > *:remove()
 ! 播放劫持防御机制 
-missav.*,missav123.com,missav888.com#%#//scriptlet('document.createElement',  'htmlAds')
+missav.ai,missav.ws,missav123.com,missav888.com#%#//scriptlet('document.createElement',  'htmlAds')
 
 
 

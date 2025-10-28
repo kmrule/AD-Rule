@@ -1,15 +1,22 @@
 [KM]
 ! Title: KM过滤
 ! Description: 去广告
-! Version: 1.0.2.4
-! Last modified: 2025-8-27
-! Expires: 5 分钟之前
+! Version: 1.0.2.5
+! Last modified: 2025-10-28
 ! Homepage: https://github.com/kmrule/AD-Rule/tree/main/ADguard
 ! Source: https://raw.githubusercontent.com/kmrule/AD-Rule/refs/heads/main/ADguard/AD-KM.txt
 !-----------------------General advert blocking filters-----------------------!
 
 192.168.64.1###app > div > div:nth-of-type(2):has-text(/掌上办，更方便/)
 !屏蔽ikuai爱快登录后台频繁出现的绑定爱快e云弹窗
+
+sj.qq.com##div[component-id="yybn_game_related_game"]
+sj.qq.com##div[class="content_highPerformance__crC_Z GameDetailPCHeader_highPerformance___UPvC"]
+sj.qq.com##div[class="CommentPreview_commentPreview__VWGqP"]
+sj.qq.com##div[class="HowTo_howTo__oHRbd HowTo_gameDetail__KKrr_"]
+sj.qq.com##div[dt-eid="brand_banner"]
+sj.qq.com##div[component-id="YYB_HOME_SEARCH_SIMILAR_APP_LIST"]
+!应用宝网页版
 
 google.com#?#div[class="MjjYud"]:has(div[class="byrV5b"]:has-text(/news.qq.com/))
 google.com#?#div[class="MjjYud"]:has(div[class="byrV5b"]:has-text(/new.qq.com/))
@@ -71,6 +78,9 @@ google.com#?#div[class="MjjYud"]:has(div[class="byrV5b"]:has-text(/m.bjnews.com.
 google.com#?#div[class="MjjYud"]:has(div[class="byrV5b"]:has-text(/stdaily.com/))
 google.com#?#div[class="MjjYud"]:has(div[class="byrV5b"]:has-text(/.scol.com.cn/))
 google.com#?#div[class="MjjYud"]:has(div[class="byrV5b"]:has-text(/.qlwb.com.cn/))
+
+! 垃圾
+google.com#?#div[class="MjjYud"]:has(img[src="data:image/png;base64,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"])
 ! 谷歌搜索结果屏蔽
 
 google.com#?#div[class="MjjYud"]:has(a[href*="themeName="])
